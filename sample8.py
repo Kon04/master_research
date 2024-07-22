@@ -3,14 +3,13 @@
 #ライブラリのインポート
 import tensorflow as tf
 import os
-import keras
-from keras.models import Sequential
-from keras.layers import Input
-from tensorflow.keras.layers import Conv2D, MaxPooling2D
-from tensorflow.keras.layers import Activation, Flatten, Dropout, Dense
-from keras.datasets import mnist
-from keras.optimizers import Adam
-from keras.callbacks import TensorBoard
+from tf.keras.models import Sequential
+from tf.keras.layers import Input
+from tf.keras.layers import Conv2D, MaxPooling2D
+from tf.keras.layers import Activation, Flatten, Dropout, Dense
+from tf.keras.datasets import mnist
+from tf.keras.optimizers import Adam
+from tf.keras.callbacks import TensorBoard
 
 #GPU設定
 # 利用可能な物理デバイスを取得します。
