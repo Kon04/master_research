@@ -2,7 +2,7 @@
 
 import numpy as np
 import cv2
-from keras.datasets import cifar10
+from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.utils import to_categorical
 
 def get_dataset():
