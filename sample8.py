@@ -10,6 +10,12 @@ from tensorflow.keras.layers import Activation, Flatten, Dropout, Dense
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import TensorBoard
+from tensorflow.compat.v1 import ConfigProto
+from tensorflow.compat.v1 import InteractiveSession
+
+config = ConfigProto()
+config.gpu_options.allow_growth = True
+session = InteractiveSession(config=config)
 
 #GPU設定
 # 利用可能な物理デバイスを取得します。
