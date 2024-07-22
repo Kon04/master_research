@@ -74,7 +74,7 @@ class MNISTDataset():
 #データセットに加える処理を記述    
     def preprocess(self, data, label_data=False):
         if label_data:
-            data = keras.utils.to_categorical(data, self.num_classes) #ラベルをone-hotベクトルに変換
+            data = tensorflow.keras.utils.to_categorical(data, self.num_classes) #ラベルをone-hotベクトルに変換
         
         else:
             data = data.astype("float32") #データ型の変換
